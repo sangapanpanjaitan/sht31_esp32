@@ -1,24 +1,29 @@
 # ESP32 Communication Check with SHT31 Sensor using I2C
 
-This program is designed to check the communication between an ESP32 microcontroller and the SHT31 temperature and humidity sensor using the I2C protocol. The program performs a single reading from the sensor and then sends a message indicating that the data is no longer being read. Contoh untuk membaca suhu dan kelembaban dari sensor sht31 oleh ESP32. Saya mengimplementasikan protokol sederhana untuk membaca data sensor dengan i2c dalam file header main.c. Kode ini dapat diintegrasikan ke esp-idf. Informasi lebih lanjut tentang sensor dapat dilihat [di Sini.](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf)
+This program is designed to check the communication between an ESP32 microcontroller and the SHT31 temperature and humidity sensor using the I2C protocol. The program performs a single reading from the sensor and then sends a message indicating that the data is no longer being read. Example to read temperature and humidity from sht31 sensor by ESP32. I implemented a simple protocol to read the sensor data with i2c in the main.c header file. This code can be integrated into esp-idf. More information about the sensor [can be found here.](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf)
+
+Here's a more engaging version of the installation steps for running ESP32 on Visual Studio Code (VSCode) with PlatformIO:
 
 ## Installation
-Untuk menjalankan ESP32 pada Visual Studio Code (VSCode) dengan PlatformIO, Anda dapat mengikuti langkah-langkah berikut:
+To get started with ESP32 development on Visual Studio Code (VSCode) using PlatformIO, follow these steps:
 
-- _Install PlatformIO Extension_
-Pastikan Anda telah menginstal ekstensi PlatformIO pada VSCode. Anda dapat menginstalnya dari Marketplace VSCode.
-- _Buat Proyek Baru_
-Buka VSCode, buka menu PlatformIO, dan pilih "New Project". Pilih board "ESP32" dan pilih framework yang ingin Anda gunakan (misalnya, Arduino, ESP-IDF).
-- _Konfigurasi PlatformIO_
-Setelah membuat proyek, buka file platformio.ini di proyek Anda dan pastikan konfigurasi board, framework, dan port serial telah benar.
-- _Tulis Kode_
-Tulis kode program ESP32 Anda dalam file src/main.cpp atau file lainnya sesuai kebutuhan.
-- _Kompilasi dan Upload_
-Gunakan menu PlatformIO atau shortcut keyboard untuk kompilasi _(Ctrl+Alt+B)_ dan upload program ke ESP32 _(Ctrl+Alt+U)_.
-- _Monitor Serial_
-Setelah upload selesai, Anda dapat membuka monitor serial untuk melihat output dari ESP32. Gunakan menu PlatformIO atau shortcut keyboard _Ctrl+Alt+M_.
+- **Install the PlatformIO Extension:**
+  Make sure you have the PlatformIO extension installed in VSCode. You can find and install it from the VSCode Marketplace.
+- **Create a New Project:**
+  Open VSCode, navigate to the PlatformIO menu, and select "New Project."
+Choose the ESP32 board from the list and select the framework you want to use (e.g., Arduino, ESP-IDF).
+- **PlatformIO Configuration:**
+  - After creating the project, open the platformio.ini file in your project.
+  - Ensure that the board, framework, and serial port configurations are correctly set for your ESP32.
+- **Write Your Code:**
+  Start writing your ESP32 program in the src/main.cpp file or any other file you create as needed.
+- **Compile and Upload:**
+  Use the PlatformIO menu or keyboard shortcut for compilation (Ctrl+Alt+B) and uploading the program to your ESP32 (Ctrl+Alt+U).
+- **Monitor Serial Output:**
+Once the upload is complete, open the serial monitor to view the output from your ESP32.
+Use the PlatformIO menu or keyboard shortcut (Ctrl+Alt+M) to open the serial monitor.
 
-Dengan mengikuti langkah-langkah di atas, Anda dapat menjalankan program ESP32 Anda pada VSCode menggunakan PlatformIO dengan mudah. Jika Anda mengalami masalah atau membutuhkan bantuan tambahan, jangan ragu untuk bertanya!
+By following these steps, you can easily run your ESP32 program on VSCode using PlatformIO. If you encounter any issues or need further assistance, feel free to ask!
 
 ### Usage
 - Connect the ESP32 microcontroller to the SHT31 sensor using I2C.
