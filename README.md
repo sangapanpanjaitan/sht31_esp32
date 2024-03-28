@@ -1,6 +1,6 @@
 # ESP32 Communication Check with SHT31 Sensor using I2C
 
-This program is designed to check the communication between an ESP32 microcontroller and the SHT31 temperature and humidity sensor using the I2C protocol. The program performs a single reading from the sensor and then sends a message indicating that the data is no longer being read.
+This program is designed to check the communication between an ESP32 microcontroller and the SHT31 temperature and humidity sensor using the I2C protocol. The program performs a single reading from the sensor and then sends a message indicating that the data is no longer being read. Contoh untuk membaca suhu dan kelembaban dari sensor sht31 oleh ESP32. Saya mengimplementasikan protokol sederhana untuk membaca data sensor dengan i2c dalam file header sht31.h. Kode ini dapat diintegrasikan ke esp-idf. Informasi lebih lanjut tentang sensor dapat dilihat [di Sini.](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf)
 
 ## Installation
 Untuk menjalankan ESP32 pada Visual Studio Code (VSCode) dengan PlatformIO, Anda dapat mengikuti langkah-langkah berikut:
